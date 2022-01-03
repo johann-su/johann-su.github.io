@@ -3,8 +3,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
 
-  <body id="lol">
-   
+  <body>
     <svg
       id="Ebene_1" 
       data-name="Ebene 1" 
@@ -53,10 +52,12 @@
       </g>
 
       <g id="shooting_star">
-        <path d="M54.1604 155.916L32.8382 168.946C28.7274 171.459 24.0183 167.336 26.198 163.04C69.6697 77.3565 169.524 56.2981 206.683 55.0343C208.499 54.9725 210.146 55.956 211.038 57.5389L220.915 75.0756C222.656 78.1669 220.715 82.0404 217.221 82.6601C181.306 89.0311 142.407 110.123 102.149 187.529C99.4834 192.655 90.8884 190.187 91.6376 184.458L93.3453 171.4C93.9412 166.843 88.5913 163.963 85.116 166.97L66.3967 183.166C62.7947 186.282 57.2883 183.075 58.2224 178.404L61.6706 161.163C62.5256 156.888 57.8807 153.643 54.1604 155.916Z" fill="#FFD700"/>
-        <path d="M226.391 0L240.447 43.262H285.936L249.135 69.9994L263.192 113.261L226.391 86.524L189.59 113.261L203.646 69.9994L166.846 43.262H212.334L226.391 0Z" fill="#FFD700"/>
+        <path d="M54.1604 175.916L32.8382 188.946C28.7274 191.459 24.0183 187.336 26.198 183.04C69.6697 97.3565 169.524 76.2981 206.683 75.0343C208.499 74.9725 210.146 75.956 211.038 77.5389L220.915 95.0756C222.656 98.1669 220.715 102.04 217.221 102.66C181.306 109.031 142.407 130.123 102.149 207.529C99.4834 212.655 90.8884 210.187 91.6376 204.458L93.3453 191.4C93.9412 186.843 88.5913 183.963 85.116 186.97L66.3967 203.166C62.7947 206.282 57.2883 203.075 58.2224 198.404L61.6706 181.163C62.5256 176.888 57.8807 173.643 54.1604 175.916Z" fill="#FFD700"/>
+        <path d="M226.391 20L240.447 63.262H285.936L249.135 89.9994L263.192 133.261L226.391 106.524L189.59 133.261L203.646 89.9994L166.846 63.262H212.334L226.391 20Z" fill="#FFD700"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M209.175 78.8544H219.549V90.9391H232.228V78.8544H242.565V89.4513L232.451 99.5648H219.289L209.175 89.4513V78.8544ZM241.449 80.007H233.381V92.0907H218.396V80.007H210.328V89.0056L219.772 98.4121H232.005L241.412 89.0056L241.449 80.007ZM241.226 76.5491L232.005 67.328H219.772L210.551 76.5491H221.854V88.6333H229.923V76.5491H241.226ZM242.565 77.7018H231.076V89.7859H220.702V77.7018H209.175V76.2888L219.289 66.1753H232.451L242.565 76.2888V77.7018ZM206.87 75.3965V90.3436L218.396 101.87H233.381L244.87 90.3436V75.3965L233.381 63.8701H218.396L206.87 75.3965ZM208.023 75.8427V89.8969L218.843 100.717H232.897L243.717 89.8969V75.8427L232.897 65.0227H218.843L208.023 75.8427Z" fill="black"/>
+        
         <animateMotion 
-          dur="2s"
+          dur="4s"
           repeatCount="indefinite"
           path="M0.5 0.999999C1109.03 0.999998 1575.74 67.1671 1920 265"
         />
@@ -65,7 +66,7 @@
           type="rotate"
           from="20 0.5 0.999999" 
           to="60 0.5 0.999999"
-          dur="2s"
+          dur="4s"
           repeatCount="indefinite"
         />
       </g>
@@ -85,6 +86,8 @@
         <ellipse cx="1400" cy="1200" rx="1000" ry="500" fill="white"/>
       </g>
 
+      <text x="1500" y="800" fill="red" size="20" transform="scale(2)">I love SVG!</text>
+
       <ellipse id="sack" cx="675" cy="740" rx="125" ry="125" fill="#654321">
         <animateMotion 
           dur="2s"
@@ -95,15 +98,27 @@
 
       <g id="body">
         <ellipse cx="600" cy="800" rx="150" ry="150" fill="red"/>
-        <ellipse cx="550" cy="950" rx="30" ry="30" fill="black"/>
+        <ellipse cx="550" cy="950" rx="30" ry="30" fill="black" />
         <ellipse cx="650" cy="950" rx="30" ry="30" fill="black"/>
-        <ellipse cx="450" cy="800" rx="30" ry="30" fill="white"/>
+        <ellipse cx="450" cy="800" rx="30" ry="30" fill="white" stroke="black" stroke-width="1"/>
         <ellipse cx="600" cy="625" rx="75" ry="75" fill="#E8CDB8"/>
         <polygon points="600,780 529,650 671,650" fill ="white"/>
         <ellipse cx="589" cy="602" rx="9" ry="19" fill="white"/>
         <ellipse cx="611" cy="602" rx="9" ry="19" fill="white"/>
-        <ellipse cx="589" cy="602" rx="5" ry="5" fill="black"/>
-        <ellipse cx="611" cy="602" rx="5" ry="5" fill="black"/>
+        <ellipse cx="589" cy="602" rx="5" ry="5" fill="black">
+          <animateMotion
+          dur="1s"
+          repeatCount="indefinite"
+          path="M-2,0 l2,-10 l3,10 z"
+        />
+        </ellipse>
+        <ellipse cx="611" cy="602" rx="5" ry="5" fill="black">
+          <animateMotion
+          dur="2s"
+          repeatCount="indefinite"
+          path="M-2,0 l2,-10 l3,10 z"
+          />
+        </ellipse>
         <ellipse cx="600" cy="630" rx="24" ry="19">
           <animate attributeName="fill" values="red;purple;red" dur="5s" repeatCount="indefinite" />
         </ellipse>
@@ -111,12 +126,17 @@
       </g>
         
       <g id="hand">
-        <ellipse cx="685" cy="690" rx="30" ry="30" fill="white"/>
+        <ellipse cx="685" cy="690" rx="30" ry="30" fill="white" stroke="black" stroke-width="1"/>
         <ellipse cx="685" cy="698" rx="8" ry="8" fill="#654321"/>
         <ellipse cx="685" cy="682" rx="8" ry="8" fill="#654321"/>
         <ellipse cx="693" cy="690" rx="8" ry="8" fill="#654321"/>
         <ellipse cx="677" cy="690" rx="8" ry="8" fill="#654321"/>
         <ellipse cx="685" cy="690" rx="8" ry="8" fill="#654321"/>
+        <animateMotion 
+          dur="2s"
+          repeatCount="indefinite"
+          path="M0,0 l -30,0 l 30,0 z"
+        />
       </g>
       <path 
         id="beard" 
@@ -128,6 +148,17 @@
       </g>
     </svg>
 
+    <div id="settings">
+      <h1 id="stars_count">Stars</h1>
+      <div class="slidecontainer">
+        <input id="amount" type="range" min="0" max="100" value="50" class="slider">
+      </div>
+      <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+        <button onclick="reload()" id="reload">Regenerate</button>
+        <p style="padding-right:50px;">Made by: Jan Weitkemper, Johann Suess, Johann Hanke.</p>
+      </div>
+    </div>
+   
     <script src="star_generator.js"></script>
   </body>    
 </html>
