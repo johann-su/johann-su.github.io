@@ -35,7 +35,41 @@
       <title>Weihnachtsmensch</title>
       
       <rect x="0" y="0" width="1920" height="1080" fill="url(#the_sky)"/>
-      
+
+      <g id="stars">
+        <polygon class="star"
+          points=" 1077,424 1052,397 1014,403 1032,370 1014,337 1052,343 1077,316 1083,354 1117,370 1083,386 " 
+          fill="#ffd700"
+        >
+          <animateTransform 
+            attributeName="transform" 
+            type="rotate"
+            from="0 1060 370" 
+            to="360 1060 370"
+            dur="4s"
+            repeatCount="indefinite"
+          />
+        </polygon>
+      </g>
+
+      <g id="shooting_star">
+        <path d="M54.1604 155.916L32.8382 168.946C28.7274 171.459 24.0183 167.336 26.198 163.04C69.6697 77.3565 169.524 56.2981 206.683 55.0343C208.499 54.9725 210.146 55.956 211.038 57.5389L220.915 75.0756C222.656 78.1669 220.715 82.0404 217.221 82.6601C181.306 89.0311 142.407 110.123 102.149 187.529C99.4834 192.655 90.8884 190.187 91.6376 184.458L93.3453 171.4C93.9412 166.843 88.5913 163.963 85.116 166.97L66.3967 183.166C62.7947 186.282 57.2883 183.075 58.2224 178.404L61.6706 161.163C62.5256 156.888 57.8807 153.643 54.1604 155.916Z" fill="#FFD700"/>
+        <path d="M226.391 0L240.447 43.262H285.936L249.135 69.9994L263.192 113.261L226.391 86.524L189.59 113.261L203.646 69.9994L166.846 43.262H212.334L226.391 0Z" fill="#FFD700"/>
+        <animateMotion 
+          dur="2s"
+          repeatCount="indefinite"
+          path="M0.5 0.999999C1109.03 0.999998 1575.74 67.1671 1920 265"
+        />
+        <animateTransform 
+          attributeName="transform" 
+          type="rotate"
+          from="20 0.5 0.999999" 
+          to="60 0.5 0.999999"
+          dur="2s"
+          repeatCount="indefinite"
+        />
+      </g>
+
       <g id="forest">
         <use xlink:href="#tree" fill="black" transform="translate(0200, 600) scale(0.8)"/>
         <use xlink:href="#tree" fill="white" transform="translate(0100, 570) scale(0.8)"/>
@@ -49,17 +83,6 @@
       <g id="ground">
         <ellipse cx="0" cy="1300" rx="1000" ry="500" fill="white"/>
         <ellipse cx="1400" cy="1200" rx="1000" ry="500" fill="white"/>
-      </g>
-      
-      <g id="stars">
-        <polygon class="star"
-          points=" 1077,424 1052,397 1014,403 1032,370 1014,337 1052,343 1077,316 1083,354 1117,370 1083,386 " 
-          fill="#ffd700"
-        >
-          <animateTransform attributeName="transform" type="rotate"
-            from="0 1060 370" to="360 1060 370"
-            dur="4s" repeatCount="indefinite"/>
-        </polygon>
       </g>
 
       <ellipse id="sack" cx="675" cy="740" rx="125" ry="125" fill="#654321">
